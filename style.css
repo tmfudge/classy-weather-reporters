@@ -1,0 +1,165 @@
+/**
+ * Media Query Demo (note the commented rules)
+ **/
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  /*
+    The background color will be #ccc
+    at browser widths above 768px
+  */
+  body {
+    /* Typography */
+    font-size: 18px;
+    line-height: 27px;
+  
+    /* Visual */
+    background-color: #ccc;
+  }
+  
+  /*
+    The width of the wrapper will be 1024px
+    at browser widths above 768px
+  */
+  .wrapper {
+    /* Box-model */
+    width: 1300px;
+  
+    /* Positioning */
+    margin: 60px auto;
+  }
+  
+  #main-content {
+    width: 800px;
+  }
+  #sidebar {
+    /* Box-model */
+    width: 420px;
+  }
+  hr {
+    width: 100%;
+  }
+  #hr1 {
+    margin-bottom: 40px;
+  }
+  #main-header {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  #main-content {
+    /* Positioning */
+    float: left;
+  
+    /* Visual */
+    background: #fff;
+  }
+  
+  #sidebar {
+    /* Positioning */
+    float: right;
+  
+    /* Visual */
+    background: #fff;
+    /* background: #eee; */
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+  
+    
+  @media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    body {
+      background-color: white;
+    }
+  
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 600px;
+    }
+  }
+  
+  
+  #about-image {
+    /* Positioning */
+    float: left;
+    margin-right: 70px;
+    /* Box-model */
+    width: 200px;
+    height: 200px;
+    margin: 30px 20px 0; 
+  }
+  .fig {
+    width: 180px;
+    height: 180;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navbar ------------------------*/
+  .navbar-brand {
+    color: #eee;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    background-color: hsl(177, 39%, 48%);
+    text-align: right;
+    padding: 30px 60px;
+  }
+    navbar-light .navbar-brand {
+      color:white;
+    }
+  
+   .nav-item {
+    font-size: 25px;
+    padding: 25px 25px;
+  }
+  
+  .nav-item:hover{
+    font-weight: bold;
+   }
+  
+  .header {
+    color : #4aaaa5;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold; 
+  }
+  
+  .latitude {
+    color:white;
+    font-weight: bolder;
+  }
+  
+  #main-header{
+    margin: 30px 10px 40px 0;
+    font-weight: bolder;
+  
+    
+  }
+  
+  #hr1{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  #visualizations{
+    margin-top: 50px;
+  }
+  #footer{
+  margin-top: 100px;
+  }
+  
+  /* PORTFOLIO PAGE */
+  .port-image {
+  margin: 20px auto;
+  }
+  
+  .block {
+  background-color: #fff;
+  
+  padding: 20px;
+  margin-bottom: 30px;
+  }
+  /* END PORTFOLIO PAGE */
+  

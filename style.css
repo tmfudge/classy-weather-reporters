@@ -99,11 +99,11 @@
   
   /* Navbar ------------------------*/
   .navbar-brand {
-    color: #eee;
+    color:white;
     font-size: 40px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    background-color: hsl(177, 39%, 48%);
+    background-color: hsl(194, 39%, 48%);
     text-align: right;
     padding: 30px 60px;
   }
@@ -112,30 +112,30 @@
     }
   
    .nav-item {
-    font-size: 25px;
+    font-size: 30px;
     padding: 25px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
   }
   
   .nav-item:hover{
-    font-weight: bold;
+    font-weight:bolder;
    }
   
   .header {
-    color : #4aaaa5;
+    color : #4a94aa;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold; 
   }
   
-  .latitude {
+  .Weather {
     color:white;
     font-weight: bolder;
   }
   
   #main-header{
     margin: 30px 10px 40px 0;
-    font-weight: bolder;
-  
-    
+    font-weight: bolder;   
   }
   
   #hr1{
@@ -144,7 +144,7 @@
   }
   
   #visualizations{
-    margin-top: 50px;
+    margin-top: 100px;
   }
   #footer{
   margin-top: 100px;

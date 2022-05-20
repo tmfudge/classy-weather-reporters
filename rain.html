@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Visualization Dashboard (Latitude)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
+</head>
+
+<body>
+    <nav id="navigationlist">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" style="background-color:rgb(65, 172, 172) ; font-family:Georgia, 'Times New Roman', Times, serif; color: white;" href="index.html">Weather Predictor</a>
+              
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="background-color:rgb(65, 172, 172) ; font-family:Georgia, 'Times New Roman', Times, serif; color: white;" href="rain.html">Rain</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="background-color:rgb(65, 172, 172) ; font-family:Georgia, 'Times New Roman', Times, serif; color: white;" href="data.html">Data</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="nav-link dropdown-toggle" href="#" style="font-family:Georgia, 'Times New Roman', Times, serif; color: black; font-size: larger; font:bold;" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="clouds.html">Clouds</a>
+                    <a class="dropdown-item" href="rain.html">Rain</a>
+                    <a class="dropdown-item" href="sunshine.html">Sunshine</a>
+                   
+                </div>
+            </li>
+        
+        </ul>
+        <!-- <nav id="smallScreenNav">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                </div>
+            </div>
+        </nav> -->
+    </nav>
+<center>
+        <div class="container">
+            <div class="row">
+            <div class="box">
+                  <h3 style=color:gray class="title">Rain</h3><br>
+                  
+                  <a href="rain.html">
+                    <img class="panel active" src="Resources/dataset2/rain/rain8.jpg" width="560" height="400" title="Clouds"> 
+                    <img class="panel active" src="Resources/dataset2/rain/rain101.jpg" width="560" height="400" title="Clouds"> 
+                    <img class="panel active" src="Resources/dataset2/rain/rain141.jpg" width="560" height="400" title="Clouds"> 
+                    <img class="panel active" src="Resources/dataset2/rain/rain174.jpg" width="560" height="400" title="Clouds"> 
+                  </a>
+                
+            </div>  
+
+    
+</center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

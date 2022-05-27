@@ -10,7 +10,7 @@ from tensorflow import keras
 import pathlib
 import glob
 import csv
-saved_model = "../model Training/Weather_model.h5"
+saved_model = "appdata/Weather_model.h5"
 Weather_model_trained = tf.keras.models.load_model(saved_model)
 
 

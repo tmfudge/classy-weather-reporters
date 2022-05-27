@@ -28,7 +28,9 @@ def scrape_vid_loc(url):
 
     video_tags = soup.find_all('video')
 
+    browser.quit()
 
+    
     if len(video_tags) != 0:
         for video_tag in video_tags:
             video_url = video_tag['poster']

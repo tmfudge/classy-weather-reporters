@@ -16,7 +16,7 @@ Weather_model_trained = tf.keras.models.load_model(saved_model)
 
 
 
-with open('../model Training/classes.csv', newline='\n') as f:
+with open('appdata/classes.csv', newline='\n') as f:
     reader = csv.reader(f)
     classes = list(reader)
 class_names = classes[0]

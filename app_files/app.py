@@ -1,14 +1,12 @@
 
-from re import I
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, url_for
 import os, requests
 import cam_scrape, weather_predictor, time
 from apscheduler.schedulers.background import BackgroundScheduler
 from pathlib import Path
+from PIL import Image
 
-fle = Path('data.py')
-fle.touch(exist_ok=True)
-f = open(fle)
+
 app = Flask(__name__)
 
 
@@ -22,7 +20,7 @@ for city in names:
 
 
 weather ={'default':['',0]}
-img = {'default':''}
+img = {'cloudy1':''}
 def scrape():
     global urls
     global img 
@@ -43,16 +41,18 @@ def scrape():
 
 
 scheduler = BackgroundScheduler()
-job = scheduler.add_job(scrape, 'interval', minutes=15)
-scheduler.start()
+
 
 @app.before_first_request
 def activate_job():
     scrape()
+    scheduler.add_job(scrape, 'interval', minutes=15)
+    scheduler.start()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    img= url_for('static',filename='images/cloudy1.jpg')
+    return render_template('index.html',citylist=city_dropdown, image=img)
 
 @app.route('/<location>')
 def place(location):
@@ -69,6 +69,9 @@ def picture(location):
 
     return img[location]
 
+# @app.route('/pics/testpicture')
+# def testpic():
+#     return ('<img src = "/static/images/cloudy1.jpg" />')
 
 if __name__ == "__main__":
     app.run(host= 'localhost',port =5000,debug=True)

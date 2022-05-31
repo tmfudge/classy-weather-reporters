@@ -26,7 +26,7 @@ Our initial values gave us Accuracy 87.5% and Loss 0.93
 ![Training_Validation](https://user-images.githubusercontent.com/85952426/171284754-43ebde2c-bc8e-49ff-bc0a-746442e6c309.png)
 
 In the plots above, Our initial values gave us Accuracy 87.5% and Loss 0.93  in the training process. Also, the difference in accuracy between training and validation accuracy is noticeable—a sign of overfitting.
-Improving the variety of training data would be next step
+Improving the variety of training data is the next step
 
 ## DATA AUGMENTATION
 In order to reduce Overfitting, we apply data augmentation. We implemented data augmentation using the following three Keras preprocessing layers: 

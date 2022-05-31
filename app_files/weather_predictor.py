@@ -1,14 +1,9 @@
-import imp
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import os
+
+
 from PIL import Image
 import tensorflow as tf
 from tensorflow import keras
-
-import pathlib
-import glob
+import numpy as np
 import csv
 saved_model = "appdata/Weather_model.h5"
 Weather_model_trained = tf.keras.models.load_model(saved_model)

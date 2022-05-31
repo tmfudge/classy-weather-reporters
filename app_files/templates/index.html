@@ -22,36 +22,50 @@
 <body>
 
   <nav class="navbar navbar-expand-sm navbar-light bg-white">
-    <a class="navbar-brand" href="index.html">Weather Predictor</a>
+    <a class="navbar-brand" href="/">Weather Predictor</a>
 
     <!-- Container wrapper -->
     <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="#navbarRightAlignExample"
-        aria-controls="navbarRightAlignExample" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-toggle="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="true"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-        <!-- Left links -->
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <!-- Navbar dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="true">
-              City Weather
-            </a>
-            <!-- Dropdown menu -->
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              {{citylist|safe}}
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- Navbar dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        City Weather
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {{citylist|safe}}
+                    </ul>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        Static analysis
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {{picture_list|safe}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  </div>
+</nav>
 
   <div class="wrapper">
     <section id="main-content">

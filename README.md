@@ -43,8 +43,24 @@ Another technique we used to reduce overfitting is “dropout”. After applying
 ![Training_after_Data_Augmentation](https://user-images.githubusercontent.com/85952426/171285843-5e45e0d3-8e38-4f19-b6dc-7e1b50c936de.png)
 
 ## PREDICT ON NEW DATA
+  uploading new data:
+https://images.unsplash.com/photo-1633467189683-9c84b2eed802?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067
 
-(https://images.unsplash.com/photo-1633467189683-9c84b2eed802?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2067)
+![Screen Shot 2022-05-31 at 5 25 48 PM](https://user-images.githubusercontent.com/85952426/171287146-2241934b-b3ae-456a-b0f2-fd4223172cde.png)
+The model said: This image most likely belongs to sunshine with a 73.07 percent confidence.
+
+  uploading new data:
+    https://images.unsplash.com/photo-1534088568595-a066f410bcda?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751
 
 
+
+![Screen Shot 2022-05-31 at 5 29 22 PM](https://user-images.githubusercontent.com/85952426/171287620-07ce34a1-1845-4eaf-97f4-dd8b9c795f94.png)
+
+The model said: This image most likely belongs to clouds with a 99.76 percent confidence.
+
+Scraping Data from: https://www.traffic-cams.com/georgia/all
+
+![Screen Shot 2022-05-31 at 5 33 41 PM](https://user-images.githubusercontent.com/85952426/171288103-1b42e276-49ce-4bc3-8d67-a83f58e35d70.png)
+
+The model said: We can see the weather from this picture  of Monterrey Mexico is sunny as predicted by a machine learning algorithm, predicted with a 99.9 percent confidence.
 
